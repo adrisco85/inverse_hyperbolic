@@ -17,7 +17,7 @@ public class InverseHyperbolicTest
 	{
 		for(int i = 0; i < testNumber; i++)
 		{
-			double x = Random.getRandomDouble(-10, 10);
+			double x = Random.getDouble(-10, 10);
 			double y = Math.sinh(x);
 			assertEquals(x, InverseHyperbolic.argsinh(y),1e-6);
 		}		
@@ -28,7 +28,7 @@ public class InverseHyperbolicTest
 	{
 		for(int i = 0; i < testNumber; i++)
 		{
-			double x = Random.getRandomDouble(-10, 10);
+			double x = Random.getDouble(-10, 10);
 			double y = Math.cosh(x);
 			if(x > 0)
 				assertEquals(x, InverseHyperbolic.argcosh(y)[0],1e-6);
@@ -42,7 +42,7 @@ public class InverseHyperbolicTest
 	{
 		for(int i = 0; i < testNumber; i++)
 		{
-			double x = Random.getRandomDouble(-10, 10);
+			double x = Random.getDouble(-10, 10);
 			double y = Math.tanh(x);
 			assertEquals(x, InverseHyperbolic.argtanh(y),1e-6);
 		}		
@@ -53,7 +53,7 @@ public class InverseHyperbolicTest
 	{
 		for(int i = 0; i < testNumber; i++)
 		{
-			double x = Random.getRandomDouble(-10, 10);
+			double x = Random.getDouble(-10, 10);
 			double y = 1/Math.tanh(x);
 			assertEquals(x, InverseHyperbolic.argcoth(y),1e-6);
 		}		
@@ -64,7 +64,7 @@ public class InverseHyperbolicTest
 	{
 		for(int i = 0; i < testNumber; i++)
 		{
-			double x = Random.getRandomDouble(-10, 10);
+			double x = Random.getDouble(-10, 10);
 			double y = 1/Math.cosh(x);
 			if(x > 0)
 				assertEquals(x, InverseHyperbolic.argsech(y)[0],1e-6);
@@ -78,7 +78,7 @@ public class InverseHyperbolicTest
 	{
 		for(int i = 0; i < testNumber; i++)
 		{
-			double x = Random.getRandomDouble(-10, 10);
+			double x = Random.getDouble(-10, 10);
 			double y = 1/Math.sinh(x);
 			assertEquals(x, InverseHyperbolic.argcsch(y),1e-6);
 		}		
