@@ -5,7 +5,7 @@ import inverseHyperbolic.InverseHyperbolic;
 
 import org.junit.Test;
 
-import randomArnaldo.Random;
+import random.Random;
 
 public class InverseHyperbolicTest 
 {
