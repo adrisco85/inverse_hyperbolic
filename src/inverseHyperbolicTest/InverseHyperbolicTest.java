@@ -10,7 +10,7 @@ import random.Random;
 public class InverseHyperbolicTest 
 {
 
-	private int testNumber = (int)1e8;
+	private int testNumber = (int)1e6;
 	
 	@Test
 	public void test_argsinh() 
